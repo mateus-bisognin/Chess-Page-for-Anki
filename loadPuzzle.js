@@ -1,6 +1,6 @@
 const loadPuzzle = (defaultParams, PuzzleData) => {
   const { i18n, pref, theme } = defaultParams;
-  const { pgn, solution, themes } = PuzzleData;
+  const { fen, pgn, solution, themes } = PuzzleData;
 
   LichessPuzzle({
     data: {
@@ -8,6 +8,7 @@ const loadPuzzle = (defaultParams, PuzzleData) => {
         pgn,
       },
       puzzle: {
+        fen,
         solution,
         themes,
       },
