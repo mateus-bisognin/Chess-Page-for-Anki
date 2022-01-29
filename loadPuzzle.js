@@ -17,5 +17,3 @@ const loadPuzzle = (defaultParams, PuzzleData) => {
     i18n,
   });
 };
-
-loadPuzzle(defaultParams, PuzzleData);
