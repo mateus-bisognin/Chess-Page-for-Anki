@@ -54,7 +54,7 @@
         const fenQuery = queryParams.get('fen') || undefined
         const pgnQuery = queryParams.get('pgn') || undefined
         const solutionQuery = queryParams.get('solution') || undefined
-        const themesQuery = queryParams.get('themes') || undefined
+        const themesQuery = queryParams.get('themes') || ''
 
         const fen = fenQuery.split('_').join(' ');
         const pgn = pgnQuery.split('_').join(' ');
@@ -69,7 +69,7 @@
         
         document.querySelector('body').classList.add('dark','brown','Woodi','Basic','coords-in','playing','online')
         
-        if ((pgn || fen) && solution && themes) {
+        if ((pgn || fen) && solution) {
             const jsFiles = ["lichess.min.js", "puzzle.min.js", "defaultParams.js", "loadPuzzle.js"]
             jsFiles.forEach(filename => {
                 const script = document.createElement('script')
