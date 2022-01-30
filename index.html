@@ -51,18 +51,18 @@
         // ?pgn=d4 d5 Nf3 e6 c4 f5 cxd5 exd5 Nc3 Be6 g3 Nf6 Bg2 Bb4 O-O O-O Bg5 Be7 e3 h6 Bf4 a6 Rc1 Bd6 Bxd6 Qxd6 Ne5 Nbd7 f4 Ne4 Nxe4 fxe4 a3 Nxe5 fxe5 Qd7 Qb3 c6 Qb6 Rab8 Rxf8+ Kxf8 Qc5+ Kg8 b4 Re8 a4 Qe7 Qxe7 Rxe7 b5 axb5 axb5 Bd7 bxc6 Bxc6 Kf2 g5 Ke2 Kf7 Kd2 Ke6 Kc3 Rf7 Rf1 Rxf1 Bxf1 Kd7 Kb4 Kc7 Kc5 b6+ Kb4 Kd7 Bh3+ Ke7 Bf5 Kd8 Bg4 Ke7 h4 Kd8 hxg5 hxg5 Be2 Kc7 Bg4 Kd8 Kc3 Ke7 Kd2 Kf7 Bc8 Kg6 Ke2 Kh5 Kd2 Kg6 Ke2 Kh5 Bf5 Kh6 Kf2 Kg7 Kg2 Kh6 Kh3 Bb7 Kg4 Bc6 e6 b5 e7 b4 Be6 b3 Bxd5&solution=c6d7_d5e6_d7e6&themes=short_bishopEndgame_endgame_mateIn2
         const queryParams = new URLSearchParams(window.location.search);
         // const position = queryParams.get("position");
-        const fenQuery = queryParams.get('fen') || ''
+        // const fenQuery = queryParams.get('fen') || ''
         const pgnQuery = queryParams.get('pgn') || ''
         const solutionQuery = queryParams.get('solution') || ''
         const themesQuery = queryParams.get('themes') || ''
 
-        const fen = fenQuery.split('_').join(' ');
+        // const fen = fenQuery.split('_').join(' ');
         const pgn = pgnQuery.split('_').join(' ');
         const solution = solutionQuery.split('_');
         const themes = themesQuery.split('_')
         
         const PuzzleData = {
-            fen,
+            // fen,
             pgn,
             solution,
             themes,
@@ -70,7 +70,7 @@
         
         document.querySelector('body').classList.add('dark','brown','Woodi','Basic','coords-in','playing','online')
         
-        if ((pgn || fen) && solution) {
+        if ((pgn) && solution) {
             const jsFiles = ["lichess.min.js", "puzzle.min.js", "defaultParams.js", "loadPuzzle.js"]
             jsFiles.forEach(filename => {
                 const script = document.createElement('script')
