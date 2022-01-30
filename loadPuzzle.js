@@ -4,9 +4,9 @@ const loadPuzzle = (defaultParams, PuzzleData) => {
 
   LichessPuzzle({
     data: {
-      game: {
-        pgn,
-      },
+      // game: {
+      //   pgn,
+      // },
       puzzle: {
         fen,
         solution,
