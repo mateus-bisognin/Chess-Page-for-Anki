@@ -53,14 +53,14 @@
         const queryParams = new URLSearchParams(window.location.search);
         // const position = queryParams.get("position");
         // const fenQuery = queryParams.get('fen') || ''
-         const pgnQuery = queryParams.get('pgn') || ''
+        const pgnQuery = queryParams.get('pgn') || ''
         const solutionQuery = queryParams.get('solution') || ''
         const themesQuery = queryParams.get('themes') || ''
 
         // const fen = fenQuery.split('_').join(' ');
-        const pgn = pgnQuery.split('_').join(' ');
-        const solution = solutionQuery.split('_');
-        const themes = themesQuery.split('_')
+        const pgn = pgnQuery.split(' ');
+        const solution = solutionQuery.split(' ');
+        const themes = themesQuery.split(' ')
         
         const PuzzleData = {
             // fen,
