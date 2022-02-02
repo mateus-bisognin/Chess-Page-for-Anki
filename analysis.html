@@ -29,7 +29,138 @@
       </style> -->
   </head>
   <body data-sound-set="standard">
-    <div id="main-wrap" class="is2d"><main class="analyse"></main></div>
+    <div id="main-wrap" class="is2d">
+      <main class="analyse variant-fromPosition has-players gamebook-play">
+        <div class="analyse__board main-board g6tNx32F">
+          <div class="study__player study__player-top">
+            <div class="left">
+              <span class="info"><span class="name"></span></span>
+            </div>
+            <div class="material material-top"></div>
+          </div>
+          <div class="cg-wrap cgv1 orientation-white manipulable">
+            <cg-container style="width: 128px; height: 128px"
+              ><cg-board
+                ><piece
+                  class="black king"
+                  style="transform: translate(48px, 32px)"
+                ></piece
+                ><piece
+                  class="white king"
+                  style="transform: translate(48px, 64px)"
+                ></piece></cg-board
+              ><svg
+                class="cg-shapes"
+                viewBox="-4 -4 8 8"
+                preserveAspectRatio="xMidYMid slice"
+              >
+                <defs></defs>
+                <g></g></svg
+              ><svg
+                class="cg-custom-svgs"
+                viewBox="-3.5 -3.5 8 8"
+                preserveAspectRatio="xMidYMid slice"
+              >
+                <g></g></svg
+              ><cg-auto-pieces></cg-auto-pieces
+              ><piece class="ghost" style="visibility: hidden"></piece
+              ><cg-resize></cg-resize
+            ></cg-container>
+          </div>
+          <div class="study__player study__player-bot ticking">
+            <div class="left">
+              <span class="info"><span class="name"></span></span>
+            </div>
+            <div class="material material-bottom"></div>
+          </div>
+        </div>
+        <div class="gamebook">
+          <div class="comment">
+            <div class="content"></div>
+          </div>
+          <div class="floor">
+            <div class="feedback end">
+              <button class="next text" data-icon="" type="button">
+                Próximo capítulo</button
+              ><button class="retry" data-icon="" type="button">
+                Jogar novamente</button
+              ><button class="analyse" data-icon="" type="button">
+                Análise
+              </button>
+            </div>
+            <img
+              class="mascot"
+              src="https://lichess1.org/assets/_JP79Hr/images/mascot/octopus.svg"
+              width="120"
+              height="120"
+            />
+          </div>
+        </div>
+        <div class="analyse__underboard">
+          <div class="gamebook-buttons">
+            <a class="fbt text preview" data-icon="">Análise</a>
+          </div>
+          <div class="study__metadata">
+            <h2>
+              <span class="name" title="100 Finais que você deve saber.: GUIA"
+                >100 Finais que você deve saber.: GUIA</span
+              ><span class="liking text" data-icon="" title="Gostei">185</span>
+            </h2>
+            <div class="study__topics">
+              <a class="topic" href="/study/topic/Final/hot">Final</a>
+            </div>
+            <div class="g6tNx32F">
+              <table class="study__tags slist">
+                <tbody>
+                  <tr>
+                    <th>Variant</th>
+                    <td><span>From Position</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="analyse__acpl"></div>
+        <aside class="analyse__side">
+          <div class="study__side">
+            <div class="tabs-horiz"></div>
+            <div class="study__chapters"></div>
+          </div>
+        </aside>
+        <section
+          class="mchat mchat-optional"
+          style="height: calc(-114px - 2vmin)"
+        >
+          <div class="mchat__tabs nb_1">
+            <div class="mchat__tab discussion mchat__tab-active">
+              <span>Sala de chat</span
+              ><input
+                type="checkbox"
+                title="Ativar/Desativar chat"
+                checked=""
+              />
+            </div>
+          </div>
+          <div class="mchat__content discussion">
+            <ol
+              class="mchat__messages chat-v-1"
+              role="log"
+              aria-live="polite"
+              aria-atomic="false"
+            ></ol>
+          </div>
+        </section>
+        <div class="chat__members" data-watched="1">
+          <div class="chat__members__inner">
+            <div class="chat__members__number" data-icon="" title="Spectators">
+              1
+            </div>
+            <div></div>
+          </div>
+        </div>
+      </main>
+    </div>
     <script nonce="0Ym6V2mtwQjTjgU4Sgsay8gd">
       lichess = {
         load: new Promise((r) => {
