@@ -29,138 +29,590 @@
       </style> -->
   </head>
   <body data-sound-set="standard">
-    <div id="main-wrap" class="is2d">
-      <main class="analyse variant-fromPosition has-players gamebook-play">
-        <div class="analyse__board main-board g6tNx32F">
-          <div class="study__player study__player-top">
-            <div class="left">
-              <span class="info"><span class="name"></span></span>
+    <div id="main-wrap" class="is2d"><main class="analyse variant-fromPosition has-players gamebook-play">
+        <div class="analyse__board main-board bQHsCh3J">
+            <div class="study__player study__player-top">
+              <div class="left">
+                <span class="info"><span class="name"></span></span>
+              </div>
+              <div class="material material-top"></div>
             </div>
-            <div class="material material-top"></div>
-          </div>
-          <div class="cg-wrap cgv1 orientation-white manipulable">
-            <cg-container style="width: 128px; height: 128px"
-              ><cg-board
+            <div class="cg-wrap cgv1 orientation-white manipulable">
+              <cg-container style="width: 128px; height: 128px"
+                ><cg-board
+                  ><piece
+                    class="black king"
+                    style="transform: translate(64px, 16px)"
+                  ></piece
+                  ><piece
+                    class="white king"
+                    style="transform: translate(32px, 32px)"
+                  ></piece
+                  ><piece
+                    class="white pawn"
+                    style="transform: translate(16px, 96px)"
+                  ></piece></cg-board
+                ><svg
+                  class="cg-shapes"
+                  viewBox="-4 -4 8 8"
+                  preserveAspectRatio="xMidYMid slice"
+                >
+                  <defs></defs>
+                  <g></g></svg
+                ><svg
+                  class="cg-custom-svgs"
+                  viewBox="-3.5 -3.5 8 8"
+                  preserveAspectRatio="xMidYMid slice"
+                >
+                  <g></g></svg
+                ><cg-auto-pieces></cg-auto-pieces
+                ><coords class="ranks"
+                  ><coord>1</coord><coord>2</coord><coord>3</coord><coord>4</coord
+                  ><coord>5</coord><coord>6</coord><coord>7</coord
+                  ><coord>8</coord></coords
+                ><coords class="files"
+                  ><coord>a</coord><coord>b</coord><coord>c</coord><coord>d</coord
+                  ><coord>e</coord><coord>f</coord><coord>g</coord
+                  ><coord>h</coord></coords
                 ><piece
-                  class="black king"
-                  style="transform: translate(48px, 32px)"
+                  class="ghost white pawn"
+                  style="visibility: hidden; transform: translate(16px, 96px)"
                 ></piece
-                ><piece
-                  class="white king"
-                  style="transform: translate(48px, 64px)"
-                ></piece></cg-board
-              ><svg
-                class="cg-shapes"
-                viewBox="-4 -4 8 8"
-                preserveAspectRatio="xMidYMid slice"
-              >
-                <defs></defs>
-                <g></g></svg
-              ><svg
-                class="cg-custom-svgs"
-                viewBox="-3.5 -3.5 8 8"
-                preserveAspectRatio="xMidYMid slice"
-              >
-                <g></g></svg
-              ><cg-auto-pieces></cg-auto-pieces
-              ><piece class="ghost" style="visibility: hidden"></piece
-              ><cg-resize></cg-resize
-            ></cg-container>
-          </div>
-          <div class="study__player study__player-bot ticking">
-            <div class="left">
-              <span class="info"><span class="name"></span></span>
+                ><cg-resize></cg-resize
+              ></cg-container>
             </div>
-            <div class="material material-bottom"></div>
-          </div>
-        </div>
-        <div class="gamebook">
-          <div class="comment">
-            <div class="content"></div>
-          </div>
-          <div class="floor">
-            <div class="feedback end">
-              <button class="next text" data-icon="" type="button">
-                Próximo capítulo</button
-              ><button class="retry" data-icon="" type="button">
-                Jogar novamente</button
-              ><button class="analyse" data-icon="" type="button">
-                Análise
-              </button>
-            </div>
-            <img
-              class="mascot"
-              src="https://lichess1.org/assets/_JP79Hr/images/mascot/octopus.svg"
-              width="120"
-              height="120"
-            />
-          </div>
-        </div>
-        <div class="analyse__underboard">
-          <div class="gamebook-buttons">
-            <a class="fbt text preview" data-icon="">Análise</a>
-          </div>
-          <div class="study__metadata">
-            <h2>
-              <span class="name" title="100 Finais que você deve saber.: GUIA"
-                >100 Finais que você deve saber.: GUIA</span
-              ><span class="liking text" data-icon="" title="Gostei">185</span>
-            </h2>
-            <div class="study__topics">
-              <a class="topic" href="/study/topic/Final/hot">Final</a>
-            </div>
-            <div class="g6tNx32F">
-              <table class="study__tags slist">
-                <tbody>
-                  <tr>
-                    <th>Variant</th>
-                    <td><span>From Position</span></td>
-                  </tr>
-                </tbody>
-              </table>
+            <div class="study__player study__player-bot ticking">
+              <div class="left">
+                <span class="info"><span class="name"></span></span>
+              </div>
+              <div class="material material-bottom">
+                <div><mpiece class="pawn"></mpiece></div>
+                <score>+1</score>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="analyse__acpl"></div>
-        <aside class="analyse__side">
-          <div class="study__side">
-            <div class="tabs-horiz"></div>
-            <div class="study__chapters"></div>
-          </div>
-        </aside>
-        <section
-          class="mchat mchat-optional"
-          style="height: calc(-114px - 2vmin)"
-        >
-          <div class="mchat__tabs nb_1">
-            <div class="mchat__tab discussion mchat__tab-active">
-              <span>Sala de chat</span
-              ><input
-                type="checkbox"
-                title="Ativar/Desativar chat"
-                checked=""
+          <div class="gamebook">
+            <div class="comment">
+              <div class="content">Procure o melhor lance para as brancas.</div>
+            </div>
+            <div class="floor">
+              <div class="feedback info play init">
+                <div>
+                  <div class="no-square"><piece class="king white"></piece></div>
+                  <div class="instruction">
+                    <strong>Sua vez</strong
+                    ><em>Encontre o melhor lance para as brancas.</em>
+                  </div>
+                </div>
+              </div>
+              <img
+                class="mascot"
+                src="https://lichess1.org/assets/_JP79Hr/images/mascot/octopus.svg"
+                width="120"
+                height="120"
               />
             </div>
           </div>
-          <div class="mchat__content discussion">
-            <ol
-              class="mchat__messages chat-v-1"
-              role="log"
-              aria-live="polite"
-              aria-atomic="false"
-            ></ol>
-          </div>
-        </section>
-        <div class="chat__members" data-watched="1">
-          <div class="chat__members__inner">
-            <div class="chat__members__number" data-icon="" title="Spectators">
-              1
+          <div class="analyse__underboard">
+            <div class="gamebook-buttons">
+              <button class="fbt text solution" data-icon="" type="button">
+                Ver solução
+              </button>
             </div>
-            <div></div>
+            <div class="study__metadata">
+              <h2>
+                <span class="name" title="100 Finais que você deve saber.: TESTE"
+                  >100 Finais que você deve saber.: TESTE</span
+                ><span class="liking text" data-icon="" title="Gostei">185</span>
+              </h2>
+              <div class="study__topics">
+                <a class="topic" href="/study/topic/Final/hot">Final</a>
+              </div>
+              <div class="bQHsCh3J">
+                <table class="study__tags slist">
+                  <tbody>
+                    <tr>
+                      <th>Variant</th>
+                      <td><span>From Position</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
           </div>
-        </div>
-      </main>
-    </div>
+          <div class="analyse__acpl"></div>
+          <aside class="analyse__side">
+            <div class="study__side">
+              <div class="tabs-horiz">
+                <span class="chapters active">64 Capítulos</span
+                ><span class="members">2 Membros</span>
+              </div>
+              <div class="study__chapters">
+                <div data-id="g6tNx32F">
+                  <span>1</span>
+                  <h3>GUIA</h3>
+                </div>
+                <div data-id="ibu8kC5N">
+                  <span>2</span>
+                  <h3>1. FINAIS BÁSICOS</h3>
+                </div>
+                <div data-id="7vZgYx5B">
+                  <span>3</span>
+                  <h3>FINAL 1 (posições 1.1 e 1.2) - A regra do quadrado</h3>
+                  <res>1-0</res>
+                </div>
+                <div data-id="JEvVmAbw">
+                  <span>4</span>
+                  <h3>Posição 1.3 - A regra do quadrado</h3>
+                </div>
+                <div class="active" data-id="bQHsCh3J">
+                  <span>5</span>
+                  <h3>TESTE</h3>
+                </div>
+                <div data-id="ojO3t6LO">
+                  <span>6</span>
+                  <h3>FINAL 2 (Posição 1.4) - O peão está na 6ª posição</h3>
+                </div>
+                <div data-id="85C80TRc">
+                  <span>7</span>
+                  <h3>TESTE</h3>
+                </div>
+                <div data-id="GufmXMA4">
+                  <span>8</span>
+                  <h3>Posição 1.5 - O peão está na 6ª posição</h3>
+                </div>
+                <div data-id="PS2KjTXj">
+                  <span>9</span>
+                  <h3>TESTE</h3>
+                </div>
+                <div data-id="AvsMOylt">
+                  <span>10</span>
+                  <h3>Posição 1.6 - O peão está na 6ª posição</h3>
+                </div>
+                <div data-id="nUmX0lhF">
+                  <span>11</span>
+                  <h3>TESTE</h3>
+                </div>
+                <div data-id="YFETO7OG">
+                  <span>12</span>
+                  <h3>Posição 1.7 - O peão está na 6ª posição</h3>
+                  <res>1-0</res>
+                </div>
+                <div data-id="T5NIbKhx">
+                  <span>13</span>
+                  <h3>TESTE</h3>
+                  <res>1-0</res>
+                </div>
+                <div data-id="d4a7h1XO">
+                  <span>14</span>
+                  <h3>Posição 1.8 - O peão está na 6ª posição</h3>
+                </div>
+                <div data-id="ujAlYTIm">
+                  <span>15</span>
+                  <h3>TESTE</h3>
+                </div>
+                <div data-id="Nzqoev4H">
+                  <span>16</span>
+                  <h3>FINAL 3 - Posição 1.9 - Casas Críticas</h3>
+                </div>
+                <div data-id="3f4KraR1">
+                  <span>17</span>
+                  <h3>TESTE</h3>
+                </div>
+                <div data-id="0tNLwmIt">
+                  <span>18</span>
+                  <h3>Posição 1.10 - Casas Críticas</h3>
+                </div>
+                <div data-id="fJGRZUVd">
+                  <span>19</span>
+                  <h3>TESTE</h3>
+                </div>
+                <div data-id="bWWub0cZ">
+                  <span>20</span>
+                  <h3>Posição 1.11 - Casas Críticas</h3>
+                </div>
+                <div data-id="X5rL8Tou">
+                  <span>21</span>
+                  <h3>TESTE</h3>
+                </div>
+                <div data-id="RwTKQvPw">
+                  <span>22</span>
+                  <h3>Posição 1.12 - Casas Críticas</h3>
+                </div>
+                <div data-id="DT9W2dEx">
+                  <span>23</span>
+                  <h3>TESTE</h3>
+                </div>
+                <div data-id="bjlq5QQP">
+                  <span>24</span>
+                  <h3>Posição 1.13 - Casas Críticas</h3>
+                </div>
+                <div data-id="6FiZkLMC">
+                  <span>25</span>
+                  <h3>TESTE</h3>
+                  <res>1-0</res>
+                </div>
+                <div data-id="oG4sM91I">
+                  <span>26</span>
+                  <h3>
+                    FINAL 4 (Posição 1.14) - O peão da torre. Defendendo o rei na frente
+                    do peão
+                  </h3>
+                </div>
+                <div data-id="qgbGGiXN">
+                  <span>27</span>
+                  <h3>Posição 1.15 - O peão da torre.</h3>
+                </div>
+                <div data-id="L5mqnt1S">
+                  <span>28</span>
+                  <h3>FINAL 5 (Posição 1.16) - Aprisionando o rei do lado mais forte</h3>
+                </div>
+                <div data-id="NzLGblSO">
+                  <span>29</span>
+                  <h3>TESTE</h3>
+                </div>
+                <div data-id="qLYhcymR">
+                  <span>30</span>
+                  <h3>FINAL 6 (Posição 1.17) - Torre vs. Bispo - O canto mau</h3>
+                </div>
+                <div data-id="1cUeQ1wm">
+                  <span>31</span>
+                  <h3>TESTE</h3>
+                </div>
+                <div data-id="dY5JeOT3">
+                  <span>32</span>
+                  <h3>FINAL 7 (Posição 1.18) - Torre vs. Bispo - O canto bom</h3>
+                </div>
+                <div data-id="8mxUfuum">
+                  <span>33</span>
+                  <h3>TESTE</h3>
+                </div>
+                <div data-id="T1WSTEBL">
+                  <span>34</span>
+                  <h3>
+                    FINAL 8. (Posições 1.19 e 1.20) - Torre vs. Cavalo - Na borda do
+                    tabuleiro
+                  </h3>
+                </div>
+                <div data-id="xPN1s0Pl">
+                  <span>35</span>
+                  <h3>TESTE</h3>
+                </div>
+                <div data-id="tmU88Pn5">
+                  <span>36</span>
+                  <h3>FINAL 9 (Posição 1.21) - Torre vs. Cavalo - No canto</h3>
+                </div>
+                <div data-id="dLAuHLHB">
+                  <span>37</span>
+                  <h3>Posições 1.24 e 1.25 - Kamsky vs. Bacrot - Sofia 2006</h3>
+                </div>
+                <div data-id="c1EZaCBT">
+                  <span>38</span>
+                  <h3>CAPÍTULO 2 - TESTES BÁSICOS</h3>
+                </div>
+                <div data-id="RoEfTfky">
+                  <span>39</span>
+                  <h3>Exercício 1</h3>
+                </div>
+                <div data-id="aTO6yP5M">
+                  <span>40</span>
+                  <h3>Exercício 2</h3>
+                </div>
+                <div data-id="x9JegExj">
+                  <span>41</span>
+                  <h3>Exercício 3</h3>
+                </div>
+                <div data-id="1JjXme8W">
+                  <span>42</span>
+                  <h3>Exercício 4</h3>
+                </div>
+                <div data-id="joTZmH7Q">
+                  <span>43</span>
+                  <h3>Exercício 5</h3>
+                </div>
+                <div data-id="qQ6Xf4v7">
+                  <span>44</span>
+                  <h3>Exercício 6</h3>
+                </div>
+                <div data-id="pWvkNX2W">
+                  <span>45</span>
+                  <h3>Exercício 7</h3>
+                </div>
+                <div data-id="PMsQIf3G">
+                  <span>46</span>
+                  <h3>Exercício 8</h3>
+                </div>
+                <div data-id="WVgpMxdY">
+                  <span>47</span>
+                  <h3>Exercício 9</h3>
+                </div>
+                <div data-id="up62M0n3">
+                  <span>48</span>
+                  <h3>Exercício 10</h3>
+                </div>
+                <div data-id="t4sK24TN">
+                  <span>49</span>
+                  <h3>Exercício 11</h3>
+                </div>
+                <div data-id="GuBmivjq">
+                  <span>50</span>
+                  <h3>Exercício 12</h3>
+                </div>
+                <div data-id="lECOcPaz">
+                  <span>51</span>
+                  <h3>Exercício 13</h3>
+                </div>
+                <div data-id="PmHHlcLN">
+                  <span>52</span>
+                  <h3>Exercício 14</h3>
+                </div>
+                <div data-id="4IUkenkv">
+                  <span>53</span>
+                  <h3>Exercício 15</h3>
+                </div>
+                <div data-id="bhqDlTb1">
+                  <span>54</span>
+                  <h3>Exercício 16</h3>
+                </div>
+                <div data-id="CO7cz6Ic">
+                  <span>55</span>
+                  <h3>Exercício 17</h3>
+                </div>
+                <div data-id="ZHHyOQ53">
+                  <span>56</span>
+                  <h3>Exercício 18</h3>
+                </div>
+                <div data-id="Mw8nnqkQ">
+                  <span>57</span>
+                  <h3>Exercício 19</h3>
+                </div>
+                <div data-id="aXtGAsh3">
+                  <span>58</span>
+                  <h3>Exercício 20</h3>
+                </div>
+                <div data-id="osiCGglF">
+                  <span>59</span>
+                  <h3>Exercício 21</h3>
+                </div>
+                <div data-id="Wv2JawpS">
+                  <span>60</span>
+                  <h3>Exercício 22</h3>
+                </div>
+                <div data-id="PFLMFCBe">
+                  <span>61</span>
+                  <h3>Exercício 23</h3>
+                </div>
+                <div data-id="JVRl6cTj">
+                  <span>62</span>
+                  <h3>Exercício 24</h3>
+                </div>
+                <div data-id="zFAauVp1">
+                  <span>63</span>
+                  <h3>Exercício 25</h3>
+                </div>
+                <div data-id="zLlWecw5">
+                  <span>64</span>
+                  <h3>Exercício 26</h3>
+                </div>
+              </div>
+            </div>
+          </aside>
+          <section class="mchat mchat-optional" style="height: calc(-114px - 2vmin)">
+            <div class="mchat__tabs nb_1">
+              <div class="mchat__tab discussion mchat__tab-active">
+                <span>Sala de chat</span
+                ><input type="checkbox" title="Ativar/Desativar chat" checked="" />
+              </div>
+            </div>
+            <div class="mchat__content discussion">
+              <ol
+                class="mchat__messages chat-v-1"
+                role="log"
+                aria-live="polite"
+                aria-atomic="false"
+              >
+                <li>
+                  <a class="user-link ulpt" href="/@/Raoni">Raoni</a>
+                  <t>Espero que gostem</t>
+                </li>
+                <li>
+                  <a class="user-link ulpt" href="/@/Galucadasial">Galucadasial</a>
+                  <t>aproveitando mto kkk</t>
+                </li>
+                <li>
+                  <a class="user-link ulpt" href="/@/Galucadasial">Galucadasial</a>
+                  <t>vai fazer mais finais?</t>
+                </li>
+                <li>
+                  <a class="user-link ulpt" href="/@/Raoni">Raoni</a>
+                  <t
+                    >Vou tentar trabalhar nesse projeto. Caso a galera goste eu produzirei
+                    o restante do livro</t
+                  >
+                </li>
+                <li>
+                  <a class="user-link ulpt" href="/@/Galucadasial">Galucadasial</a>
+                  <t>blz</t>
+                </li>
+                <li>
+                  <a class="user-link ulpt" href="/@/cdrsantos">cdrsantos</a>
+                  <t>Estava pensando em trabalhar com esse livro</t>
+                </li>
+                <li>
+                  <a class="user-link ulpt" href="/@/WanSilence">WanSilence</a>
+                  <t>Bom trabalho, excelente projeto.</t>
+                </li>
+                <li>
+                  <a class="user-link ulpt" href="/@/cdrsantos">cdrsantos</a>
+                  <t>você já finalizou o trabalho ou esta no começo</t>
+                </li>
+                <li>
+                  <a class="user-link ulpt" href="/@/Raoni">Raoni</a> <t>No começo</t>
+                </li>
+                <li>
+                  <a class="user-link ulpt" href="/@/Raoni">Raoni</a>
+                  <t>Terminei hoje esses dois capítulos do livro</t>
+                </li>
+                <li>
+                  <a class="user-link ulpt" href="/@/Raoni">Raoni</a>
+                  <t>pra cada caso eu coloquei um treino pra pessoa fixar melhor</t>
+                </li>
+                <li>
+                  <a class="user-link ulpt" href="/@/Raoni">Raoni</a>
+                  <t>O capítulo 2 é só de Teste, como vcs podem ver.</t>
+                </li>
+                <li>
+                  <a class="user-link ulpt" href="/@/Raoni">Raoni</a>
+                  <t>Livro é bom, mas a gente não consegue mover as peças. :-)</t>
+                </li>
+                <li>
+                  <a class="user-link ulpt" href="/@/Raoni">Raoni</a>
+                  <t
+                    >Por isso, o modo interativo é o que mais rende em questão de
+                    estudo.</t
+                  >
+                </li>
+                <li>
+                  <a class="user-link ulpt" href="/@/cdrsantos">cdrsantos</a>
+                  <t
+                    >eu achei esse trabalho em Inglês e comecei a tradução para depois ir
+                    montando as posições</t
+                  >
+                </li>
+                <li>
+                  <a class="user-link ulpt" href="/@/Raoni">Raoni</a>
+                  <t>A pessoa aprende mais e de maneira rápida.</t>
+                </li>
+                <li>
+                  <a class="user-link ulpt" href="/@/Raoni">Raoni</a>
+                  <t>Muito bom, cdrsantos!</t>
+                </li>
+                <li>
+                  <a class="user-link ulpt" href="/@/cdrsantos">cdrsantos</a>
+                  <t>Você consegue acompanhar por ai os meus movimentos</t>
+                </li>
+                <li><a class="user-link ulpt" href="/@/Raoni">Raoni</a> <t>Não</t></li>
+                <li>
+                  <a class="user-link ulpt" href="/@/Raoni">Raoni</a>
+                  <t>Lembrem de abrir esse estudo pelo navegador.</t>
+                </li>
+                <li>
+                  <a class="user-link ulpt" href="/@/Raoni">Raoni</a>
+                  <t>Abrindo pelo Aplicativo não funciona o modo interativo</t>
+                </li>
+                <li>
+                  <a class="user-link ulpt" href="/@/cdrsantos">cdrsantos</a>
+                  <t>Tem que abrir em Notebook ou PC, e isso</t>
+                </li>
+                <li><a class="user-link ulpt" href="/@/Raoni">Raoni</a> <t>sim.</t></li>
+                <li>
+                  <a class="user-link ulpt" href="/@/Raoni">Raoni</a>
+                  <t>se não tiver, abre pelo navegador do celular</t>
+                </li>
+                <li>
+                  <a class="user-link ulpt" href="/@/Raoni">Raoni</a>
+                  <t>não fica 100% mas fica no modo correto</t>
+                </li>
+                <li>
+                  <a class="user-link ulpt" href="/@/Raoni">Raoni</a>
+                  <t>só não funciona pelo aplicativo mesmo</t>
+                </li>
+                <li>
+                  <a class="user-link ulpt" href="/@/Raoni">Raoni</a>
+                  <t>lichess ainda não permite</t>
+                </li>
+                <li><a class="user-link ulpt" href="/@/cdib">cdib</a> <t>Valew !!</t></li>
+                <li>
+                  <a class="user-link ulpt" href="/@/JoaoMoreira47">JoaoMoreira47</a>
+                  <t
+                    >Muito bom esse estudos, meu amigo esta de parabens, faça mais por
+                    favor!</t
+                  >
+                </li>
+                <li>
+                  <a class="user-link ulpt" href="/@/Raoni">Raoni</a> <t>Estudo Lotado</t>
+                </li>
+                <li>
+                  <a class="user-link ulpt" href="/@/Raoni">Raoni</a>
+                  <t>Galera se interssou. Vou fazer o curso completo</t>
+                </li>
+                <li>
+                  <a class="user-link ulpt" href="/@/Raoni">Raoni</a> <t>*Interessou</t>
+                </li>
+                <li>
+                  <a class="user-link ulpt" href="/@/Raoni">Raoni</a>
+                  <t>Criei um grupo para tratar somente deste assunto</t>
+                </li>
+                <li>
+                  <a class="user-link ulpt" href="/@/Raoni">Raoni</a>
+                  <t>https://chat.whatsapp.com/J6M0Cb0q0pD1UwWIGgipxN</t>
+                </li>
+                <li>
+                  <a class="user-link ulpt" href="/@/Torre_azul">Torre_azul</a>
+                  <t>Excelente material amigo Raoni. Muito criativo e legal. Parabéns</t>
+                </li>
+                <li>
+                  <a class="user-link ulpt" href="/@/Raoni">Raoni</a>
+                  <t
+                    >https://www.youtube.com/channel/UC10omdo9f479xhAmA_xLNIw?view_as=subscriber</t
+                  >
+                </li>
+                <li>
+                  <a class="user-link ulpt" href="/@/Raoni">Raoni</a>
+                  <t>Não esqueça de deixar o like aqui no estudo</t>
+                </li>
+                <li>
+                  <a class="user-link ulpt" href="/@/Raoni">Raoni</a> <t>parte 2</t>
+                </li>
+                <li>
+                  <a class="user-link ulpt" href="/@/Raoni">Raoni</a>
+                  <t
+                    ><a
+                      target="_blank"
+                      rel="noopener nofollow noreferrer"
+                      href="https://lichess.org/study/E8pSmida"
+                      >lichess.org/study/E8pSmida</a
+                    ></t
+                  >
+                </li>
+                <li>
+                  <a class="user-link ulpt" href="/@/Raoni">Raoni</a>
+                  <t
+                    >Quem quiser ter acesso a todas as partes é só enviar mensagem pelo
+                    chat aqui do lichess mesmo</t
+                  >
+                </li>
+              </ol>
+            </div>
+          </section>
+          <div class="chat__members" data-watched="1">
+            <div class="chat__members__inner">
+              <div class="chat__members__number" data-icon="" title="Spectators">2</div>
+              <div></div>
+            </div>
+          </div>
+          </main>
+          
     <script nonce="0Ym6V2mtwQjTjgU4Sgsay8gd">
       lichess = {
         load: new Promise((r) => {
