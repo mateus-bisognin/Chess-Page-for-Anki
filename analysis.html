@@ -82,19 +82,17 @@
           "online"
         );
 
-      if (pgn && solution) {
-        const jsFiles = [
-          "lichess.min.js",
-          "analysisBoard.min.js",
-          "loadAnalysis.js",
-        ];
-        jsFiles.forEach((filename) => {
-          const script = document.createElement("script");
-          script.src = filename;
-          script.async = false;
-          document.head.appendChild(script);
-        });
-      }
+      const jsFiles = [
+        "lichess.min.js",
+        "analysisBoard.min.js",
+        "loadAnalysis.js",
+      ];
+      jsFiles.forEach((filename) => {
+        const script = document.createElement("script");
+        script.src = filename;
+        script.async = false;
+        document.head.appendChild(script);
+      });
     </script>
   </body>
 </html>
