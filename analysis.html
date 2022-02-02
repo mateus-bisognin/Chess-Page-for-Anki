@@ -30,7 +30,7 @@
   </head>
   <body data-sound-set="standard">
     <div id="main-wrap" class="is2d"><main class="analyse"></main></div>
-    <script>
+    <script nonce="0Ym6V2mtwQjTjgU4Sgsay8gd">
       lichess = {
         load: new Promise((r) => {
           document.addEventListener("DOMContentLoaded", r);
@@ -57,7 +57,11 @@
           ["%s years ago", "in %s years"],
         ][n];
       };
+    </script>
+    <script defer="defer" src="lichess.min.js"></script>
+    <script defer="defer" src="analysisBoard.min.js"></script>
 
+    <script>
       document
         .querySelector("body")
         .classList.add(
@@ -70,11 +74,7 @@
           "online"
         );
 
-      const jsFiles = [
-        "lichess.min.js",
-        "analysisBoard.min.js",
-        "loadAnalysis.js",
-      ];
+      const jsFiles = ["loadAnalysis.js"];
       jsFiles.forEach((filename) => {
         const script = document.createElement("script");
         script.src = filename;
