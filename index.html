@@ -44,7 +44,7 @@
       </main>
     </div>
     <script>
-      if (!!webview) webview.getSettings().setDomStorageEnabled(true);
+      Object.keys(window).forEach((key) => console.log(key));
       lichess = {
         load: new Promise((r) => {
           document.addEventListener("DOMContentLoaded", r);
